@@ -1,0 +1,14 @@
+<div class="box blue">
+    <h2>SwitchMap Component</h2>
+    <h3>Map to observable, cancel previous inner observable, emit values.</h3>
+    <button (click)="startNewOrder()">Start new order</button>
+    {{ 'Current order: ' + this.orderCounter }}
+    <hr>
+    <button (click)="_complete.next('complete')">Complete</button>
+    <ol>
+      @for ( message of messages ; track $index ) {
+      <li>{{ message }}</li>
+      }
+    </ol>
+  </div>
+  

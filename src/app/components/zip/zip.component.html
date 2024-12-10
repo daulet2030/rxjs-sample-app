@@ -1,0 +1,12 @@
+<div class="box red">
+  <h2>Zip Component</h2>
+  <h3>After all observables emit, emit values as an array</h3>
+  <button (click)="_item1.next('item1')">Item 1</button>
+  <button (click)="_item2.next('item2')">Item 2</button>
+  <button (click)="_item3.next('item3')">Item 3</button>
+  <ol>
+    @for ( message of messages ; track $index ) {
+    <li>{{ message }}</li>
+    }
+  </ol>
+</div>
